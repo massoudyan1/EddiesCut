@@ -1,0 +1,23 @@
+<div class="container">
+    <div class="logo-holder">
+        <h1>EDDIE'S CUT</h1>
+    </div>
+    <div *ngIf="true" class="menu1">
+        <ul class="menu-item">
+            <li>
+                <a routerLink="forside" routerLinkActive="current">Forside</a>
+            </li>
+            <li>
+                <a routerLink="/menu" routerLinkActive="current">Menu</a>
+            </li>
+            <li>
+                <a routerLink="salonen" routerLinkActive="current">Salonen</a>
+            </li>
+            <li>
+                <a routerLink="produkter" routerLinkActive="current">Produkter</a>
+            </li>
+          </ul>
+    </div>
+    <div *ngIf="!true" class="menu2"></div>
+
+</div>

@@ -1,0 +1,97 @@
+@import url(//db.onlinewebfonts.com/c/a97dc52b4b2059e5f04907cb7492af0b?family=Handel+Gothic);
+:host {
+    font-style: italic;    
+    .container{
+        // background-color: red;
+        width: 100%;
+        height:130px;
+        display: flex;
+        padding: 10px;
+        box-sizing: border-box;
+        // justify-content: space-between;
+        align-items: center;
+        border-bottom: 1px solid black;
+
+        .logo-holder {
+            width: 220px;
+            height: 100px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            h1 {
+              -webkit-mask-image: linear-gradient(0deg, white 22px, transparent 22px,  transparent 24px, white 24px);
+              font-family:"Handel Gothic",Arial, Helvetica, sans-serif
+            }
+            h3 {
+
+            }
+            img{
+                width:100%;
+                height: 100%;
+                border-radius: 30% 46% 46% 30%;
+            }
+        }
+
+        .menu1 {
+            padding-right: 50px;
+            flex:1;
+            display: flex;
+            justify-content: center;
+        }
+    }
+  }
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,500);
+.menu-item {
+  font-family: 'Raleway', Arial, sans-serif;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+.menu-item * {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: all 0.35s ease;
+  transition: all 0.35s ease;
+}
+.menu-item li {
+  display: inline-block;
+  list-style: outside none none;
+  margin: 0.5em 1em;
+  padding: 0;
+}
+.menu-item a {
+  padding: 0.8em 17px;
+  // color: #99592A;
+  position: relative;
+  letter-spacing: 1px;
+  text-decoration: none;
+}
+.menu-item a:before,
+.menu-item a:after {
+  left: 0%;
+  right: 0%;
+  top: 50%;
+  -webkit-transform: translateY(-50%) rotate(0deg);
+  transform: translateY(-50%) rotate(0deg);
+  content: '';
+  border-left: 12px solid #46627f;
+  border-right: 12px solid #46627f;
+  height: 3px;
+  position: absolute;
+  -webkit-transition: all 0.35s ease;
+  transition: all 0.35s ease;
+}
+.menu-item a:hover,
+.menu-item .current a {
+  color: #99592A;
+}
+.menu-item a:hover:before,
+.menu-item li .current:before {
+  -webkit-transform: translateY(-50%) rotate(12deg);
+  transform: translateY(-50%) rotate(12deg);
+}
+.menu-item a:hover:after,
+.menu-item li .current:after {
+  -webkit-transform: translateY(-50%) rotate(-12deg);
+  transform: translateY(-50%) rotate(-12deg);
+}
