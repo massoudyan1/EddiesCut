@@ -1,0 +1,45 @@
+:host {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    h1 {
+        color: #c2977a
+
+    }
+    h2 {
+        color: #9b7860;
+        margin-bottom: 6px;
+    }
+    ul {
+        padding: 0;
+        margin: 20px auto;
+        display: flex;
+        width: 90%;
+        max-width: 600px;
+        flex-direction: column;
+        margin-bottom: 30px;
+        li {
+            list-style: none;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-sizing: border-box;
+            padding-right: 35px;
+            padding-left: 15px;
+            height: 50px;
+            border-radius: 20px;
+            margin-top: 2px;
+            span {
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 20px;
+            }
+            &.a{
+                background-color: #FFFFFF;
+            }
+            &.b{
+                background-color: #ECE7E1;
+            }
+        }
+    }
+}
