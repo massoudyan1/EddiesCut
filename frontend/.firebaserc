@@ -1,0 +1,14 @@
+{
+  "projects": {
+    "default": "eddiescut-a9fc5"
+  },
+  "targets": {
+    "eddiescut-a9fc5": {
+      "hosting": {
+        "frontend": [
+          "eddiescut-a9fc5"
+        ]
+      }
+    }
+  }
+}

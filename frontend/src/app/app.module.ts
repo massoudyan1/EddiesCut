@@ -9,6 +9,12 @@ import { NavLinksComponent } from './nav-links/nav-links.component';
 import { MenuComponent } from './menu/menu.component';
 import { SalonenComponent } from './salonen/salonen.component';
 import { ProdukterComponent } from './produkter/produkter.component';
+import { initializeApp,provideFirebaseApp } from '@angular/fire/app';
+import { environment } from '../environments/environment';
+import { provideAnalytics,getAnalytics,ScreenTrackingService,UserTrackingService } from '@angular/fire/analytics';
+import { provideFirestore,getFirestore } from '@angular/fire/firestore';
+import { provideAuth } from '@angular/fire/auth';
+import { getAuth } from 'firebase/auth';
 
 @NgModule({
   declarations: [
@@ -22,9 +28,15 @@ import { ProdukterComponent } from './produkter/produkter.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    provideFirebaseApp(() => initializeApp(environment.firebaseConfig)),
+    provideAnalytics(() => getAnalytics()),
+    provideFirestore(() => getFirestore()),
+    provideAuth(() => getAuth())
   ],
-  providers: [],
+  providers: [
+    ScreenTrackingService,UserTrackingService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
