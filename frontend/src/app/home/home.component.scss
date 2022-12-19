@@ -20,7 +20,7 @@
         .text {
             color: white;
             // background-color: #383B40;
-            background-color: #272829;
+            background-color: #0F0C12;
 
             font-family: Arial, Helvetica, sans-serif;
             font-size: 16px;
@@ -50,6 +50,16 @@
                 }
             }
 
+            &.text {
+                h2 {
+                    color: #D4B068;
+                    box-sizing: border-box;
+                    padding: 10px;
+                }
+            }
+            h2 {
+                text-align: center;
+            }
         }
         .img {
             //background-color: rgb(194, 151, 122);
